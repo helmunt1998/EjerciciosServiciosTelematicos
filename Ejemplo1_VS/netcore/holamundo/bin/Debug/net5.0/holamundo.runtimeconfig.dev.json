@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Helmu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Helmu\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.exe
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.deps.json
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.runtimeconfig.json
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.runtimeconfig.dev.json
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.dll
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\ref\holamundo.dll
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\bin\Debug\net5.0\holamundo.pdb
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.csproj.AssemblyReference.cache
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.AssemblyInfoInputs.cache
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.AssemblyInfo.cs
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.csproj.CoreCompileInputs.cache
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.dll
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\ref\holamundo.dll
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.pdb
+C:\Users\Helmu\Documents\GitHub\EjerciciosServiciosTelematicos\Ejemplo1_VS\netcore\holamundo\obj\Debug\net5.0\holamundo.genruntimeconfig.cache
