@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label
+        {
+            float: left;
+            clear: left;
+            display: block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p><label>Ingrese los siguientes datos: </label></p>
+    <form action="/" method="post">
+        <fieldset style="width: 400px;">
+            <legend>Datos Información Básica</legend>
+            <label>Nombre:</label>
+            <input type="text" id="user_name" name="name"><br />
+            <label>Edad:</label>
+            <input type="text" id="edad" name="age"><br />
+            <label>Sexo:</label>
+            <input type="text" id="sexo" name="sex"><br />
+            <label>Teléfono:</label>
+            <input type="text" id="telf" name="phone"><br />
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>  
+    </form>
+</body>
+</html>
