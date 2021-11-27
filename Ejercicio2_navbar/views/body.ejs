@@ -1,0 +1,209 @@
+<%- include("template/header") %>
+
+<body>
+    <figure class="text-center">
+        <h1 class="text-danger">Catálogo de productos geek</h1>
+    </figure>
+    <p class="lead">Este es el catálogo de productos disponible.</p>
+    <ul class="list-unstyled">
+        <li>Agrega el nombre al producto y pulsa "Agregar".</li>
+        <li>Recuerda que:
+          <ul>
+            <li>No puedes agregar más de 4 elementos.</li>
+            <li>En cada pestaña puedes agregar una imagen del producto.</li>
+            <li>Puedes agregar una descripción al producto.</li>
+            <li>Puedes consultar cada producto al agregarlo.</li>
+            <li>Agregar más de 4 elementos borra los agregados por el usuario y reestablece la barra de navegación.</li><br />
+          </ul>
+        </li>
+    </ul>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+          <form class="d-flex" action="/" method="post" onsubmit="this.submit(); this.reset(); return false;">
+            <input class="form-control me-2" type="add" id="text" placeholder="Add new product" aria-label="add" name="add">
+            <button class="btn btn-outline-light" type="submit" id="myButton">Agregar</button>
+          </form>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-pills">
+                    <a class="nav-link" aria-current="page" href="#tab1">Producto 1</a>
+                    <a class="nav-link" href="#tab2">Producto 2</a>
+                    <a class="nav-link" href="#tab3">Producto 3</a>
+                    <a class="nav-link" href="#tab4">Producto 4</a>
+                  <!--var txt = document.getElementById("text");   
+                    document.getElementById("myButton").onclick = function(){
+                            <a class="nav-link">text</a>
+                    <em>NewElements: <%= typeof NewElements != 'undefined' ? NewElements : 'default' %></em>} -->
+                    <%- NewElements %>
+                    <%- NewElements2 %>
+                    <%- NewElements3 %>
+                    <%- NewElements4 %>
+                </div>  
+            </div> 
+        </div>
+    </nav>
+  <div class="secciones">
+    <article id="tab1">
+        <p>Pagina 1.</p>
+        <input type="file" id="file" accept="image/*" onchange="mostrar()"/>
+        <br>
+        <img id="img"/>   
+      </article>
+    </div> 
+  <div class="secciones">
+    <article id="tab2">
+      <p>Pagina 2.</p>
+      <input type="file" id="file2" accept="image/*" onchange="mostrar2()"/>
+      <br>
+      <img id="img2"/>   
+    </article>
+  </div>  
+  <div class="secciones">
+    <article id="tab3">
+      <p>Pagina 3.</p>
+      <input type="file" id="file3" accept="image/*" onchange="mostrar3()"/>
+      <br>
+      <img id="img3"/>   
+    </article>
+  </div>  
+  <div class="secciones">
+    <article id="tab4">
+      <p>Pagina 4.</p>
+      <input type="file" id="file4" accept="image/*" onchange="mostrar4()"/>
+      <br>
+      <img id="img4"/>   
+    </article>
+  </div>   
+  <div class="secciones">
+        <article id="tab5">
+        <p>Pagina 5.</p>
+        <input type="file" id="file5" accept="image/*" onchange="mostrar5()"/>
+        <br>
+        <img id="img5"/>   
+        </article>
+    </div> 
+  <div class="secciones">
+    <article id="tab6">
+      <p>Pagina 6.</p>
+      <input type="file" id="file6" accept="image/*" onchange="mostrar6()"/>
+      <br>
+      <img id="img6"/>   
+    </article>
+  </div>  
+  <div class="secciones">
+    <article id="tab7">
+      <p>Pagina 7.</p>
+      <input type="file" id="file7" accept="image/*" onchange="mostrar7()"/>
+      <br>
+      <img id="img7"/>   
+    </article>
+  </div>  
+  <div class="secciones">
+    <article id="tab8">
+      <p>Pagina 8.</p>
+      <input type="file" id="file8" accept="image/*" onchange="mostrar8()"/>
+      <br>
+      <img id="img8"/>   
+    </article>
+  </div>
+
+  <script>  //script que hace lo mismo que debería estar en p1.js
+        function mostrar(){
+        var archivo = document.getElementById("file").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img").src = reader.result;
+          }
+        }
+      }
+      function mostrar2(){
+        var archivo = document.getElementById("file2").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img2").src = reader.result;
+          }
+        }
+      }
+      function mostrar3(){
+        var archivo = document.getElementById("file3").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img3").src = reader.result;
+          }
+        }
+      }
+      function mostrar4(){
+        var archivo = document.getElementById("file4").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img4").src = reader.result;
+          }
+        }
+      }
+      function mostrar5(){
+        var archivo = document.getElementById("file5").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img5").src = reader.result;
+          }
+        }
+      }
+      function mostrar6(){
+        var archivo = document.getElementById("file6").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img6").src = reader.result;
+          }
+        }
+      }
+      function mostrar7(){
+        var archivo = document.getElementById("file7").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img7").src = reader.result;
+          }
+        }
+      }
+      function mostrar8(){
+        var archivo = document.getElementById("file8").files[0];
+        var reader = new FileReader();
+        if (file) {
+          reader.readAsDataURL(archivo);
+          reader.onloadend = function () {
+            document.getElementById("img8").src = reader.result;
+          }
+        }
+      }
+    $(document).ready(function(){  //instancia este documento
+      $('nav.navbar a:first').addClass('active');
+      $('.secciones article').hide();
+      $('.secciones article:first').show();
+
+      $('nav.navbar a').click(function(){  //crea una funcion que realiza acciones cuando se hace click en los elementos de navbar
+        $('nav.navbar a').removeClass('active');
+        $(this).addClass('active');
+        $('.secciones article').hide();
+
+        var nav_active = $(this).attr('href'); //extrae el atributo 'href' y lo guarda en una variable
+        $(nav_active).show();
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
