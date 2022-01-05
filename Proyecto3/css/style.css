@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 232, 236);
+}
+.form-registrer{
+    width: 350px;
+    background:#24303c;
+    padding: 30px;
+    margin:10px;    
+    border-radius: 4px;
+    font-family: 'calibri';
+    color:white;
+}
+.form-registrer h4 {    
+    font-size: 22px;
+    margin-bottom:22px;
+    text-align: center;    
+}
+.controls{
+    width: 100%;
+    background: #344250;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border : 1px solid #1f53c5;
+    font-family: 'calibri';
+    color:white;
+}
+.form-registrer .boton{ 
+    width: 100%;
+    background: #446dc7;
+    border:none;
+    padding:12px;
+}
+
+table{        
+    font-family:'calibri';
+    width: 400px;  
+    margin: -378px 430px;
+    
+}
+th{  
+    font-size: 20px;  
+  }
+td{
+    font-size: 15px;
+      
+}

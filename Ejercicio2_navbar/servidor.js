@@ -2,8 +2,8 @@
 const express = require("express");
 const path = require('path'); 
 const app = express();
-const puerto = 5000;
-//const puerto = process.env.PORT;
+//const puerto = 5000;
+const puerto = process.env.PORT;
 
 const bodyParser = require('body-parser');
 
@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 //Motor de plantillas
 app.set('view engine', 'ejs');
 app.set('views',__dirname+'/views');
-//app.set('views','/app/views');
-app.use(express.static(__dirname + "/public"));  //Indicar dirección estática para el uso de los módulos css dentro de ejs.
-//app.use(express.static("/app/public"));
+app.set('views','/app/views');
+//app.use(express.static(__dirname + "/public"));  //Indicar dirección estática para el uso de los módulos css dentro de ejs.
+app.use(express.static("/app/public"));
 //Atención de la solicitud
 app.get('/', (req,res)=>{
    // var text_product = req.body.add;

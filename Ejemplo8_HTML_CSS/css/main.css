@@ -1,0 +1,26 @@
+.frase1{color:crimson;} /* */
+.frase2{color:deeppink;}
+.frase3{color:gold;}
+li{
+    display: inline;
+    background:khaki;
+    font-size: 40px;
+    text-align: right;
+}
+table{
+    padding-left: 150px;
+}
+th{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+td{
+    border: 3px solid black;
+    padding: 15px;
+}
+
+td:hover{
+    background: silver;
+}
+
