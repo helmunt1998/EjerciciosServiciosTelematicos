@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type="text/css" href="/css/style.css"> 
+    <title>Alarma automática.</title>
+    <script src="scripts/credencial.js"></script>
+</head>
+<body>  
+    <div class="entrace_option">
+        <h1>Bienvenido al sistema domótico de alarma casera</h1>
+        <p>Seleccione una opción:</p>
+        <button class="window_popup" onclick="Active_a();">Activar alarma.</button>
+        <button class="local_window" onclick="Deactive_a();">Desactivar alarma.</button>
+
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup"> 
+                <a href="#" id="close_window" class="close_window"><b>x</b></a>
+                <h2>Ingrese credenciales de acceso:</h2>
+                <form id="form2" actiom="" onsubmit="send_data();"> 
+                    <label id="name_text">Nombre:</label>
+                    <input class="internal_submit" type="text" id="name"><br>
+                    <label id="pass_text">Contraseña:</label>
+                    <input class="internal_submit" type="text" id="password"><br>
+                    <input class="ingresar" id="ingresar" type="submit" value="Ingresar">
+                </form>
+            </div>
+        </div> 
+    </div>
+    <div class="clear_entrace"></div> 
+</body>
+</html>
