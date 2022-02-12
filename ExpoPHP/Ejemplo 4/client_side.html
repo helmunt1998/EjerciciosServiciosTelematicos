@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo AJAX</title>
+</head>
+<body>
+    <div>
+        <h2>Este es un script que se está ejecutando del lado del cliente.</h2>
+        <p>Cuando necesite solicitar alguna información del servidor, llenaré en el form.</p>
+    </div>
+    <script>
+        function requestInfo(str){  //ingreso a la función y por medio de su 
+                                    //argmento (str) valido si es
+                                    //necesario hacer alguna petición al 
+                                    //servidor o no (setencia if-else)
+            var xhttp = new XMLHttpRequest();  //creo el objeto XMLHttpRequest
+            if(str.length == 0){    //Si no hay cambios en el form, mantengo 
+                                    //la misma respuesta
+                document.getElementById("element").innerHTML = "";
+                return;
+            }else{
+                xhttp.onreadystatechange = function(){  //hay algun cambio 
+                                                        //dentro del estado del objeto?
+                if(this.readyState == 4 && this.status == 200){//si el server esta listo
+                                                              // para responderme
+                   document.getElementById("element").innerHTML = this.responseText;//response
+                    //this.getResponseHeader("Last-Modified");
+                }
+            }
+            xhttp.open("GET", "./Ajax_php/server_data.php?color=" + str, true); //condicion de 
+                                                                        //peticion al servidor
+            xhttp.send();  //genero o envio la peticion al servidor
+            } 
+        }
+    </script>
+    <form>
+        <label>Color favorito:</label>
+        <input type="text" onkeyup="requestInfo(this.value);"> 
+        <!--onkeyup es un evento que me permite realizar alguna acción cada vez que
+            levanto la pulsación de una tecla, en este caso llamo la función junto 
+            con el valor que retorna la misma.-->  
+    </form>
+    <p><label>Respuesta:</label>
+        <span id="element"></span>
+    </p>
+</body>
+</html>
